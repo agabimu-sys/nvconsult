@@ -1,0 +1,62 @@
+ASTRA — USE THIS AS YOUR INITIAL TASK
+
+You are the implementation agent for NVConsult.eu.
+
+Read:
+- 00_READ_FIRST_ASTRA.md
+- 01_PRODUCT_REQUIREMENTS.md
+- 02_EXECUTION_PLAN.md
+- 03_REPOSITORY_FILE_MENU.md
+- 04_ACCEPTANCE_TESTS.md
+
+Then inspect the actual repository and existing NVConsult implementation.
+
+Do NOT begin by redesigning the homepage.
+
+Do NOT reintroduce the legacy Travisa UI.
+
+Do NOT start a new implementation simply because the existing one is imperfect.
+
+First produce an internal technical audit of the existing codebase:
+1. active frontend entry points;
+2. shared CSS/JS;
+3. API/backend;
+4. database schema;
+5. country data sources;
+6. Country Explorer implementation;
+7. admin implementation;
+8. jobs;
+9. study;
+10. immigration/pathways;
+11. news/guides;
+12. options assessment;
+13. comparison;
+14. booking;
+15. social;
+16. CV Maker;
+17. SEO;
+18. security;
+19. deployment requirements.
+
+Classify findings:
+IMPLEMENTED / PARTIAL / BROKEN / MISSING / DUPLICATED / LEGACY / SECURITY RISK.
+
+Then execute the project in the order in 02_EXECUTION_PLAN.md.
+
+The most important product feature to verify and complete is the Country Explorer:
+Leaflet map + search + Work/Study/Immigration/Jobs/region filters + interactive markers + country preview + country page link + featured destinations + mobile behavior, all powered by the central country model.
+
+The most important visual requirement is consistency:
+the homepage and ALL internal public pages must look and behave as one NVConsult website.
+
+The most important architectural requirement is centralization:
+country, pathway, job, study, news and guide relationships must not be maintained as disconnected duplicated datasets.
+
+The most important security requirement is server-side protection:
+never put credentials in frontend code and never rely on client-side-only admin authorization.
+
+Preserve useful existing functionality.
+
+When you finish each milestone, test it and record what was actually verified.
+
+Do not claim completion without evidence.
